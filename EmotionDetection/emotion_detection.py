@@ -22,5 +22,6 @@ def emotion_detector(text_to_analyse):
                     'sadness': sadness,
                     'dominant_emotion': dom_emotion
                     }
+    output_format["dominant_emotion"] = max(emotion, key=emotion.get)
     return output_format
     #return response.text
